@@ -884,13 +884,12 @@ img{
     border-radius: 50%;
     padding: 10px;
     opacity: 0;
-    transform: rotate(-180deg) scale(0.7);
-    transition: 1s ease;
+    
 }
 
 .circle.active .outer {
     opacity: 1;
-    transform: rotate(0deg) scale(1);
+    
 }
 
 .inner {
