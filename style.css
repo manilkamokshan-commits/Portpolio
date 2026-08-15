@@ -870,13 +870,12 @@ img{
 .circle {
     text-align: center;
     opacity: 0;
-    transform: translateY(40px);
-    transition: 0.6s ease;
+    
 }
 
 .circle.active {
     opacity: 1;
-    transform: translateY(0);
+    
 }
 
 .outer {
