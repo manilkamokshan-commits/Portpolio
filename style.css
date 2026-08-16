@@ -857,18 +857,32 @@ img{
 
 
 
+/* ================= CIRCLE SKILLS ================= */
+
+.skill-circles{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    gap:40px;
+    margin-top:70px;
+}
+
 .circle{
+    width:150px;
     text-align:center;
     opacity:0;
-    transition:opacity:.4s ease;
+    transform:translateY(30px);
+    transition:.5s ease;
 }
 
 .circle.active{
     opacity:1;
+    transform:translateY(0);
 }
 
 .circle:hover{
-    transform:none;
+    transform:translateY(-10px);
 }
 
 .circle .outer{
@@ -1513,35 +1527,35 @@ section{
 
 
 .skills-images{
-
-    width:100%;
-
-    max-width:300px;
-
-    margin:35px auto 0;
-
     display:grid;
-
-    grid-template-columns:repeat(2,1fr);
-
+    grid-template-columns:repeat(3,1fr);
     gap:25px;
-
     justify-items:center;
-
     align-items:center;
-
 }
 
-
-
 .skills-images img{
+    width:100px;
+    height:100px;
+    object-fit:contain;
+    background:
+    linear-gradient(145deg,#1d1d1d,#101010);
+    border:1px solid #333;
+    border-radius:25px;
+    padding:18px;
+    transition:.45s ease;
+}
 
-    width:80px;
+.skills-images img:hover{
+    transform:
+    translateY(-15px)
+    scale(1.12)
+    rotate(5deg);
 
-    height:80px;
+    border-color:white;
 
-    margin:auto;
-
+    box-shadow:
+    0 20px 40px rgba(255,255,255,.18);
 }
 
 
