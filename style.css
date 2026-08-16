@@ -860,7 +860,7 @@ img{
 .circle{
     text-align:center;
     opacity:0;
-    transition:.4s ease;
+    transition:opacity:.4s ease;
 }
 
 .circle.active{
@@ -868,17 +868,10 @@ img{
 }
 
 .circle:hover{
-    transform:translateY(-15px);
+    transform:none;
 }
 
-.circle:hover .outer{
-    transform:scale(1.08);
-    box-shadow:
-    0 0 25px rgba(255,255,255,.2),
-    0 15px 35px rgba(255,255,255,.15);
-}
-
-.outer{
+.circle .outer{
     width:150px;
     height:150px;
     border-radius:50%;
@@ -889,6 +882,13 @@ img{
 
 .circle.active .outer{
     opacity:1;
+}
+
+.circle:hover .outer{
+    transform:scale(1.08);
+    box-shadow:
+    0 0 25px rgba(255,255,255,.2),
+    0 15px 35px rgba(255,255,255,.15);
 }
 
 .inner{
@@ -921,7 +921,6 @@ img{
 
 .circle:hover p{
     color:white;
-    transform:translateY(-2px);
 }
 /* ================= PROJECTS ================= */
 
