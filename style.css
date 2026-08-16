@@ -892,7 +892,7 @@ img{
     padding:10px;
     opacity:0;
     transition:.4s ease;
-    outline:2px solid #2b2b2b;
+    outline:2px solid #ffffff;
 }
 
 .circle.active .outer{
